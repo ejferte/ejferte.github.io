@@ -3,7 +3,7 @@
  */
 
 body {
-  font-family: Roboto, Helvetica, sans-serif;
+  font-family: Roboto;
   margin: 0;
   background-color: #eee;
 }
@@ -13,25 +13,18 @@ a {
 }
 
 .site-title {
-  margin: 0;
-    display: inline-block;
-  font-size: 75px;
-  font-weight: bold;
-    margin-top: 250px;
+  margin: 0 0 0 10px;
+  display: inline-block;
+  font-size: 45px;
   color: #fff;
 }
 
 .header {
-    background-color: #222226
-
+  background-color: #222226
 }
 
 .header-img {
-    /*display: block;
-    margin-left: auto;
-    margin-right: auto;*/
-    width: 20%;
-
+  width: 20%;
 }
 
 .navbar {
