@@ -195,6 +195,10 @@ nav.addEventListener("keyup", function() {
   var content = document.getElementsByClassName("twit-content");
   
   for(var i = 0; i < content.length; i++){
+    if(input === ""){
+      content[i].closest(".twit").classList.remove("hidden");
+      continue;
+    }
       var twitText = content[i].getElementsByClassName('twit-text');
       console.log(twitText);
 
@@ -202,8 +206,6 @@ nav.addEventListener("keyup", function() {
       if(txtvalue.toLowerCase().indexOf(input) > -1){
           content[i].closest(".twit").classList.add("hidden");
       }
-      else
-          content[i].style.display = "none";
       
       var authorText = content[i].getElementsByClassName('twit-author');
   
@@ -211,7 +213,5 @@ nav.addEventListener("keyup", function() {
       if(txtvalue.toLowerCase().indexOf(input) > -1){
           content[i].closest(".twit").classList.add("hidden");
       }
-      else
-          content[i].style.display = "none";
   }
 });
