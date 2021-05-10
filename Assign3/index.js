@@ -112,6 +112,8 @@ document.getElementById("create-twit-button").addEventListener('click', function
 var cancelButton = function() {
   document.getElementById("modal-backdrop").style.display = "none";
   document.getElementById("create-twit-modal").style.display = "none";
+  textinput.value = "";
+  author.value = "";
 }
 
 var cancel = document.getElementsByClassName("modal-cancel-button");
