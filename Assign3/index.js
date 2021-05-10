@@ -200,19 +200,15 @@ nav.addEventListener("keyup", function() {
       continue;
     }
       var twitText = content[i].getElementsByClassName('twit-text');
+      var authorText = content[i].getElementsByClassName('twit-author');
       console.log(twitText);
 
       var txtvalue = twitText[0].textContent;
-      if(txtvalue.toLowerCase().indexOf(input) === -1){
+      var authvalue = authorText[0].textContent;
+
+      if(txtvalue.toLowerCase().indexOf(input) === -1 && authvalue.toLowerCase().indexOf(input) === -1){
           content[i].closest(".twit").classList.add("hidden");
           continue;
-      }
-      
-      var authorText = content[i].getElementsByClassName('twit-author');
-  
-      txtvalue = authorText[0].textContent;
-      if(txtvalue.toLowerCase().indexOf(input) === -1){
-          content[i].closest(".twit").classList.add("hidden");
       }
   }
 });
