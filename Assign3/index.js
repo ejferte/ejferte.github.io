@@ -197,8 +197,8 @@ nav.addEventListener("keyup", function() {
   for(var i = 0; i < content.length; i++){
       var twitText = content[i].getElementsByClassName('twit-text');
       console.log(twitText);
-      
-      var txtvalue = twitText[0].value;
+
+      var txtvalue = twitText[0].textContent;
       if(txtvalue.toLowerCase().indexOf(input) > -1){
           content[i].style.display = "";
       }
