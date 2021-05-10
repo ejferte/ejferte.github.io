@@ -203,14 +203,15 @@ nav.addEventListener("keyup", function() {
       console.log(twitText);
 
       var txtvalue = twitText[0].textContent;
-      if(txtvalue.toLowerCase().indexOf(input) > -1){
+      if(txtvalue.toLowerCase().indexOf(input) === -1){
           content[i].closest(".twit").classList.add("hidden");
+          continue;
       }
       
       var authorText = content[i].getElementsByClassName('twit-author');
   
       txtvalue = authorText[0].textContent;
-      if(txtvalue.toLowerCase().indexOf(input) > -1){
+      if(txtvalue.toLowerCase().indexOf(input) === -1){
           content[i].closest(".twit").classList.add("hidden");
       }
   }
