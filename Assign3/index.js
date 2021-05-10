@@ -130,7 +130,7 @@ var acceptButton = function() {
   console.log(textinput.value);
   console.log(author.value);
   if(textinput.value == "" || author.value == ""){
-      window.alert("Both the twit text and Author have to be filled in.");
+      window.alert("One of the fields is empty, please fill in the form completely.");
   }
   else{
       var article = document.createElement("article");
