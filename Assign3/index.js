@@ -200,7 +200,7 @@ nav.addEventListener("keyup", function() {
 
       var txtvalue = twitText[0].textContent;
       if(txtvalue.toLowerCase().indexOf(input) > -1){
-          content[i].style.display = "";
+          content[i].addClass("hidden");
       }
       else
           content[i].style.display = "none";
@@ -209,7 +209,7 @@ nav.addEventListener("keyup", function() {
   
       txtvalue = authorText[0].textContent;
       if(txtvalue.toLowerCase().indexOf(input) > -1){
-          content[i].style.display = "";
+          content[i].addClass("hidden");
       }
       else
           content[i].style.display = "none";
