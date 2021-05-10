@@ -138,9 +138,8 @@ var acceptButton = function() {
       var article = document.createElement("article");
       article.classList.add("twit");
       var mainclass = document.querySelector(".twit-container");
-      mainclass.appendChild(article);/*added a new twit container here at end of last twit container*/
+      mainclass.appendChild(article);
       
-      /*adding the icon to new twit container*/
       var div1 = document.createElement("div");
       div1.classList.add("twit-icon");
       
