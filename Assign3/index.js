@@ -112,6 +112,8 @@ document.getElementById("create-twit-button").addEventListener('click', function
 var cancelButton = function() {
   document.getElementById("modal-backdrop").style.display = "none";
   document.getElementById("create-twit-modal").style.display = "none";
+  var textinput = document.getElementById("twit-text-input");
+  var author = document.getElementById("twit-attribution-input");
   textinput.value = "";
   author.value = "";
 }
@@ -127,8 +129,8 @@ for(var i = 0; i < xbutton.length; i++){
   }
 
 var acceptButton = function() {
-  var textinput = document.getElementById("twit-text-input");
-  var author = document.getElementById("twit-attribution-input");
+  textinput = document.getElementById("twit-text-input");
+  author = document.getElementById("twit-attribution-input");
   console.log(textinput.value);
   console.log(author.value);
   if(textinput.value == "" || author.value == ""){
@@ -139,7 +141,7 @@ var acceptButton = function() {
       article.classList.add("twit");
       var mainclass = document.querySelector(".twit-container");
       mainclass.appendChild(article);
-      
+
       var div1 = document.createElement("div");
       div1.classList.add("twit-icon");
       
