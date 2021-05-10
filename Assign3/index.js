@@ -207,7 +207,7 @@ nav.addEventListener("keyup", function() {
       
       var authorText = content[i].getElementsByClassName('twit-author');
   
-      txtvalue = authorText[0].value;
+      txtvalue = authorText[0].textContent;
       if(txtvalue.toLowerCase().indexOf(input) > -1){
           content[i].style.display = "";
       }
